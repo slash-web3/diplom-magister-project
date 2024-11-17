@@ -1,0 +1,114 @@
+/* Основний контейнер */
+.ray-tracing-task-content {
+    display: flex;
+    justify-content: space-between;  /* Вирівнює елементи по краях */
+    gap: 30px;                       /* Простір між елементами */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Канвас */
+#ray-tracing-canvas {
+    width: 600px;                    /* Зменшена ширина */
+    height: 400px;                   /* Зменшена висота */
+    background-color: #000;
+    border: 1px solid #888;          /* Бордер канвасу */
+    border-radius: 4px;
+}
+
+/* Панель інструментів */
+.ray-tracing-tools {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;                       /* Простір між елементами */
+}
+
+/* Позиціонування для перемикачів */
+.method-selection {
+    display: flex;
+    flex-direction: column;          /* Елементи вертикально */
+    gap: 15px;                       /* Простір між елементами */
+    margin-bottom: 30px;             /* Нижній відступ */
+    padding: 0 20px;                 /* Відступи зліва і справа */
+}
+
+/* Кнопка запуску */
+.generate-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #003366;       /* Темно-синя границя */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Стиль для кнопки запуску при наведенні */
+.generate-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Стиль для результатів */
+.performance-metrics {
+    margin-top: 20px;
+}
+
+/* Стиль для результатів продуктивності */
+.performance-metrics p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Стилі для перемикачів методів */
+.method-selection label {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* Стилі для кнопок */
+.control-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.control-buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 50%;  /* Кругла форма */
+}
+
+.control-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.control-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Стиль кнопки фільтра */
+.filter-btn {
+    padding: 8px 13px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 150px;
+}
+
+/* Стиль кнопки фільтра при наведенні */
+.filter-btn:hover {
+    background-color: #0056b3;
+}

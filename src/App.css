@@ -1,0 +1,45 @@
+/* Стилі для body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex; /* Використовуємо Flexbox */
+  justify-content: center; /* Центруємо по горизонталі */
+  align-items: center; /* Центруємо по вертикалі */
+  min-height: 100vh; /* Висота екрану */
+}
+
+/* Стилі для кореневого контейнера (root) */
+#root {
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box; /* Враховуємо padding в загальну ширину */
+}
+
+/* Стилі для header */
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/* Стилі для control-panel */
+.control-panel {
+  background-color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* Стилі для task-cards */
+.task-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Вирівнюємо картки зліва */
+  row-gap: 30px;
+  column-gap: 30px;
+}

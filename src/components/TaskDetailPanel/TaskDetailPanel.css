@@ -1,0 +1,49 @@
+/* components/TaskDetailPanel/TaskDetailPanel.css */
+.task-detail-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.task-detail-content {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.task-detail-content p{
+    font-size: 15px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
+
+/* Текст */
+h2 {
+  font-size: 18px; /* Зменшений розмір */
+}
+
+p {
+  font-size: 14px; /* Зменшений розмір */
+  margin-bottom: 20px;
+}
+

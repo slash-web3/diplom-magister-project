@@ -1,0 +1,159 @@
+.task-detail-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+  }
+
+  p{
+    max-width: 650px;
+  }
+
+  .fibonacci-data-area {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    border: 3px solid #ccc;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Ліва частина: введення числа */
+  .task-input-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-input-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .task-input-section input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Права частина: вибір методу обчислення */
+  .task-method-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task-method-section label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Стилізація перемикача */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #4caf50; /* Зелений при виборі */
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(16px); /* Пересування вправо */
+  }
+
+  .fibonacci-button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .fibonacci-button:hover {
+    background-color: #ddd;
+  }
+
+  /* Додати в файл FibonacciTaskDetail.css */
+.fibonacci-result {
+  margin-top: 20px;
+  background-color: #e7f7e7;
+  padding: 10px;
+  border-radius: 5px;
+  color: #4CAF50;
+  font-size: 18px;
+  text-align: center;
+}
+
+.fibonacci-result-both {
+  margin-top: 20px;
+  background-color: #e7f7e7;
+  border-radius: 5px;
+  color: #4CAF50;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+
+.fibonacci-result-both p{
+  color: #4CAF50;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.fibonacci-both-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.fibonacci-duration {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.duration-text {
+  flex: 1;
+}
+
+.duration-chart {
+  flex: 1;
+  padding-left: 20px;
+}
